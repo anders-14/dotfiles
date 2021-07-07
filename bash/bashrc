@@ -17,7 +17,8 @@ HISTFILESIZE=2000
 HISTFILE="$DOTFILES/bash/history"
 
 # Prompt
-PS1='\W \033[0;32m\$\033[0m '
+PS1='\W \033[38;2;255;165;0m\$\033[0m '
+
 
 # Aliases
 source "$DOTFILES/bash/aliases.sh"
