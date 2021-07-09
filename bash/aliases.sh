@@ -5,7 +5,7 @@ alias egrep="egrep --color=auto"
 
 # ls
 alias ls="ls --color=auto"
-alias la="ls -gAhF"
+alias la="ls -goAhFv"
 
 # nvim
 alias vi="nvim"
