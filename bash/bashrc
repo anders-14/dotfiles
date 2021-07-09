@@ -20,8 +20,8 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 HISTFILE="$DOTFILES/bash/history"
 
-# Prompt
-PS1='\W \033[38;2;255;165;0m\$\033[0m '
+# Prompt with git branch if available
+PS1='\W\033[38;2;10;200;10m$(__git_ps1) \033[38;2;255;165;0m\$\033[0m '
 
 
 # Aliases
