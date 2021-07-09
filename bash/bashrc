@@ -5,10 +5,14 @@
 # |_.__/ \__,_|___/_| |_|_|  \___|
 #
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 # Env
 export PATH="$PATH:/usr/local/go/bin:/home/anders/go/bin"
 export DOTFILES="$HOME/repos/dotfiles"
 export EDITOR="nvim"
+export LESSHISTFILE="-"
 
 # History settings
 HISTCONTROL=ignoreboth
