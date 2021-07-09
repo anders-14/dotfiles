@@ -9,6 +9,12 @@ require('keybinds')
 
 require('colorbuddy').colorscheme('gruvbuddy')
 
+-- Highlight yank
+vim.cmd [[ augroup highlight_yank ]]
+vim.cmd [[ autocmd! ]]
+vim.cmd [[ au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700} ]]
+vim.cmd [[ augroup END ]]
+
 -- Remove some backgrounds
 vim.cmd [[ hi Normal guibg=none ]]
 vim.cmd [[ hi clear SignColumn ]]
