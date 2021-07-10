@@ -20,9 +20,10 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 HISTFILE="$DOTFILES/bash/history"
 
-# Prompt with git branch if available
+# Prompt
+# __git_ps1 is not available on arch by default, have to source the file below
+[[ -f "/usr/share/git/git-prompt.sh" ]] && source "/usr/share/git/git-prompt.sh"
 PS1='\W\033[38;2;10;200;10m$(__git_ps1) \033[38;2;255;165;0m\$\033[0m '
-
 
 # Aliases
 source "$DOTFILES/bash/aliases.sh"
