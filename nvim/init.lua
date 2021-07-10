@@ -1,11 +1,12 @@
 vim.g.mapleader = ','
 
-require('plugins')
-require('lsp')
-require('treesitter')
-require('tele')
 require('settings')
 require('keybinds')
+require('plugins')
+require('lsp')
+require('format')
+require('treesitter')
+require('tele')
 
 require('colorbuddy').colorscheme('gruvbuddy')
 
