@@ -9,7 +9,7 @@
 [[ $- != *i* ]] && return
 
 # Env
-export PATH="$PATH:/usr/local/go/bin:/home/anders/go/bin:/home/anders/bin"
+export PATH="$PATH:/usr/local/go/bin:/home/anders/go/bin:/home/anders/bin:/home/anders/.local/bin"
 export DOTFILES="$HOME/repos/dotfiles"
 export EDITOR="nvim"
 export LESSHISTFILE="-"
