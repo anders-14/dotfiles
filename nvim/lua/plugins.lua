@@ -6,6 +6,9 @@ return require('packer').startup(function()
     use 'neovim/nvim-lspconfig'
     use 'nvim-lua/completion-nvim'
 
+    -- Formatter
+    use 'mhartington/formatter.nvim'
+
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
