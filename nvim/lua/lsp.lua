@@ -12,4 +12,5 @@ end
 
 nvim_lsp.clangd.setup({ on_attach=custom_on_attach })
 nvim_lsp.gopls.setup({ on_attach=custom_on_attach })
+nvim_lsp.jedi_language_server.setup({ on_attach=custom_on_attach })
 
