@@ -11,9 +11,9 @@ vim.opt.ruler = false
 vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.smartindent = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -40,12 +40,12 @@ vim.opt.mouse = 'a'
 
 vim.opt.textwidth = 79
 vim.opt.formatoptions = vim.opt.formatoptions
-    + "c" -- Auto wrap comments using textwidth
-    + "r" -- Insert new comment leader on enter in insert
-    - "o" -- Dont insert new comment leader on o or O
-    + "q" -- Format comments with gq
-    - "w" -- Dont need trailing white space to indicate continuation of paragraph
-    - "a" -- Dont auto format
-    + "n" -- Recognice lists when formating
-    - "2" -- Use first lines indentation level as guide
-    + "j" -- Remove comment leader when joining lines
+  + "c" -- Auto wrap comments using textwidth
+  + "r" -- Insert new comment leader on enter in insert
+  - "o" -- Dont insert new comment leader on o or O
+  + "q" -- Format comments with gq
+  - "w" -- Dont need trailing white space to indicate continuation of paragraph
+  - "a" -- Dont auto format
+  + "n" -- Recognice lists when formating
+  - "2" -- Use first lines indentation level as guide
+  + "j" -- Remove comment leader when joining lines
