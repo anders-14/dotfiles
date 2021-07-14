@@ -24,5 +24,14 @@ require('formatter').setup({
         }
       end
     },
+    cpp = {
+      function()
+        return {
+          exe = "clang-format",
+          args = { "-i", vim.api.nvim_buf_get_name(0) },
+          stdin = false,
+        }
+      end
+    },
   },
 })
