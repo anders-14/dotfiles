@@ -40,9 +40,9 @@ vim.opt.mouse = 'a'
 
 vim.opt.textwidth = 79
 vim.opt.formatoptions = vim.opt.formatoptions
+  - "o" -- Dont insert new comment leader on o or O
   + "c" -- Auto wrap comments using textwidth
   + "r" -- Insert new comment leader on enter in insert
-  - "o" -- Dont insert new comment leader on o or O
   + "q" -- Format comments with gq
   - "w" -- Dont need trailing white space to indicate continuation of paragraph
   - "a" -- Dont auto format
